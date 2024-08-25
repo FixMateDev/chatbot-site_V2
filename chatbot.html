@@ -1,0 +1,16 @@
+<script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+
+<script src="https://mediafiles.botpress.cloud/a03be393-6f54-4e9b-b187-f1aad1910318/webchat/v2.1/config.js"></script>
+
+<script>
+  // This script ensures the chatbot automatically opens on page load
+  window.onload = function() {
+    // Wait for the chatbot script to fully load
+    setTimeout(function() {
+      // Automatically open the chatbot
+      if (window.botpressWebChat) {
+        window.botpressWebChat.sendEvent({ type: 'show' });
+      }
+    }, 1000); // Adjust the delay if necessary
+  };
+</script>
